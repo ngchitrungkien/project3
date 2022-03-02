@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>iTech - Tech News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+
+            <!-- nav -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid"
+                        src="https://www.logolynx.com/images/logolynx/1f/1fd863497ac19d574dc998cf75fae52c.jpeg"
+                        width="75.42px" height="30.32px" alt="logo here!">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" style="color: white;" href="index.html">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" style="color: white;" href="tin_ict.html">Tin ICT <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Thiết bị
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="thietbi_c.html">Máy tính</a>
+                                <a class="dropdown-item" href="thietbi_p.html">Điện thoại</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Game
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="game_p.html">Game Máy tính</a>
+                                <a class="dropdown-item" href="game_m.html">Game Điện thoại</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" style="color: white;" href="khampha.html">Khám phá<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" style="color: white;" href="vid.html">Video<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0" action="search.html">
+                        <input class="form-control mr-sm-2" type="text" id="finding-value" placeholder="Tìm kiếm"
+                            aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit" onclick="saveLS()">Tìm
+                            kiếm</button>
+                    </form>
+                </div>
+            </nav>
+
+            <div style="margin-top:58px">
+
+            </div>
+
+            
+
+            <div class="row justify-content-center" style="margin-top:60px">
+                <h1> Kết quả tìm kiếm:</h1>
+            </div>
+
+            <div id="search-content">
+
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div id="search-content2" class="col-sm-6"> 
+
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="footer bg-dark text-white justify-align-between">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="row">
+                            <div class=col-1>
+                                <a href="index.html">
+                                    <img class="img-fluid"
+                                        src="https://www.logolynx.com/images/logolynx/1f/1fd863497ac19d574dc998cf75fae52c.jpeg"
+                                        width="75.42px" height="30.32px" alt="logo here!" class="float-left"></a>
+                            </div>
+                            <div class=col-8>
+                                <div class="row">
+                                    <div class=col-3>
+                                        <h5 class="header-h5"><a href="tin_ict.html">Tin ICT</a></h5>
+                                    </div>
+                                    <div class=col-3>
+                                        <h5 class="header-h5"><a href="#">Thiết bị</a></h5>
+
+                                        <li class="footer_li2"><a class="a2" href="thietbi_c.html">Máy tính</a></li>
+                                        <li class="footer_li2"><a class="a2" href="thietbi_p.html">Điện thoại</a></li>
+                                        </li>
+
+
+                                    </div>
+                                    <div class=col-3>
+                                        <h5 class="header-h5"><a href="#">Game</a></h5>
+                                        <li class="footer_li2"><a href="game_p.html">Game Máy tính</a></li>
+                                        <li class="footer_li2"><a href="game_m.html">Game Điện thoại</a></li>
+                                    </div>
+                                    <div class=col-3>
+                                        <h5 class="header-h5"><a href="khampha.html">Khám phá</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <ul class="nav">
+                                    <li class="nav-item footer_li2">
+                                        <a class="nav-link" href="#">Blog</a>
+                                    </li>
+                                    <li class="nav-item footer_li2">
+                                        <a class="nav-link" href="#">Facebook</a>
+                                    </li>
+                                    <li class="nav-item footer_li2">
+                                        <a class="nav-link" href="#">Twitter</a>
+                                    </li>
+                                    <li class="nav-item footer_li2">
+                                        <a class="nav-link" href="#">Instagram</a>
+                                    </li>
+                                </ul>
+
+                                <p class="pp">Site design / logo © 2022 iTech Group; user contributions licensed under cc by-sa.
+                                    rev 2022</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+    <script src="data.js"></script>
+    <script src="search.js"></script>
+    <script src="search_onClick.js"></script>
+</body>
+
+</html>

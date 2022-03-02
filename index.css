@@ -1,0 +1,154 @@
+.bottom-header {
+    height: 45px;
+    position: relative;
+}
+.menu-expand-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 45px;
+    left: 0;
+    background: #f1f1f1;
+    height: 190px;
+    z-index: 9999;
+    display: none;
+}
+.menu-clear {
+    width: 100%;
+    background: #f1f1f1;
+    position: relative;
+    box-shadow: 0 11px 84px 0 rgba(0,0,0,.35);
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.clearfix {
+    zoom: 1;
+}
+.w1040 {
+    width: 1040px;
+    margin: 0 auto;
+}
+.submenu-expand-list .submenu-expand-item.cate {
+    border-bottom: 1px solid #acacac;
+    margin-bottom: 24px;
+    position: relative;
+}
+/* ----End Header---- */
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.li2{
+    font-size: 9pt;
+    list-style: none;
+}
+.ul2{
+    padding: 0
+}
+.li2>a{
+    color: rgb(185, 185, 185);
+}
+.li2>a:hover{
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    
+   left: 0;
+   top: 100%;
+   width: 100%;
+   padding: 32px 12px 12px 12px;
+}
+.pp{
+    color: rgb(185, 185, 185);
+    font-size: 9pt;
+    display: block;
+}
+
+.rowlist{
+    display: flex;
+    padding-left: 0;
+}
+.rowlist>li{
+    margin-left: 5px;
+    
+}
+.text-justify a {
+    color: black;
+}
+.hoverText:hover {
+    color: darkmagenta;
+    text-decoration: none;
+}
+#post{
+    border-top: red solid;
+}
+
+/* ---------------update------------- */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+  /*--------------*/
+.footer_li2{
+    font-size: 9pt;
+    list-style: none;
+}
+.footer_li2>a{
+    color: rgb(185, 185, 185);
+}
+.footer_li2>a:hover{
+    color: white;
+    text-decoration: none;
+}
+.footer{
+   left: 0;
+   top: 100%;
+   width: 100%;
+   padding: 32px 12px ;
+}
+.header-h5{
+    text-transform: uppercase;
+}
+.header-h5>a{
+    color: white;
+    text-decoration: none;
+}
+.header-h5>a:hover{
+    color: white;
+    text-decoration: none;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.pp{
+    color: rgb(185, 185, 185);
+    font-size: 9pt;
+    display: block;
+}
+
+/* .rowlist{
+    display: flex;
+    padding-left: 0;
+}
+.rowlist>li{
+    margin-left: 5px;
+    
+} */
+
+video {
+    width: 100%;
+    height: auto;
+}

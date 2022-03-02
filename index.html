@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>iTech - Tech News</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="page-container">
+    <div id="content-wrap">
+
+      <!-- nav -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+          <img class="img-fluid"
+            src="https://www.logolynx.com/images/logolynx/1f/1fd863497ac19d574dc998cf75fae52c.jpeg"
+            width="75.42px" height="30.32px" alt="logo here!">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white;" href="index.html">Home <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white;" href="tin_ict.html">Tin ICT <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Thiết bị
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="thietbi_p.html">Máy tính</a>
+                <a class="dropdown-item" href="thietbi_c.html">Điện thoại</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Game
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="game_p.html">Game Máy tính</a>
+                <a class="dropdown-item" href="game_m.html">Game Điện thoại</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white;" href="khampha.html">Khám phá<span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white;" href="vid.html">Video<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" action="search.html">
+            <input class="form-control mr-sm-2" type="text" id="finding-value" placeholder="Tìm kiếm"
+              aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit" onclick="saveLS()">Tìm kiếm</button>
+          </form>
+        </div>
+      </nav>
+      <div style="margin-top:58px">
+
+      </div>
+      <!-- carousel  -->
+
+      <div class="main">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 img-fluid"
+                src="https://cdn.karar.com/news/1414763.jpg"
+                width="100%" height="850" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>
+                  <a style='color: white'
+                    href="https://genk.vn/nam-2031-smartphone-se-bien-mat-metaverse-tich-hop-vao-the-gioi-thuc-va-con-nguoi-se-sinh-san-kieu-moi-20220222154047736.chn" target="_blank">
+                    Năm 2031, smartphone sẽ biến mất, metaverse tích hợp vào thế giới thực và con người sẽ sinh sản kiểu mới?</a>
+                </h3>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid"
+                src="https://fscl01.fonpit.de/userfiles/7446224/image/samsung-galaxy-tab-s8-series/nextpit-samsung-galaxy-tab-s8-s8-plus-s8-ultra-clr2.jpg"
+                width="100%" height="850" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>
+                  <a style='color: white'
+                    href="https://genk.vn/man-hinh-sieu-to-khong-lo-146-inch-cua-galaxy-tab-s8-ultra-loi-hai-the-nao-uu-nhuoc-ra-sao-co-dang-them-5-trieu-20220302204626795.chn">
+                    Apple tiếp tục chứng minh mình là kẻ đi sau các hãng smartphone Android, nhưng luôn làm tốt hơnMàn hình “siêu to khổng lồ” 14.6 inch của Galaxy Tab S8 Ultra: Lợi hại thế nào, ưu nhược ra sao, có đáng thêm 5 triệu?
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid" 
+                src="https://cdn.tgdd.vn/Files/2022/02/18/1416252/oppo-a76-blue_1280x720-800-resize.jpg" 
+                width="100%" height="850" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>
+                  <a style='color: white'
+                    href="https://genk.vn/tren-tay-oppo-a76-thiet-ke-thoi-trang-pin-khung-co-sac-nhanh-nhat-phan-khuc-gia-duoi-6-trieu-dong-20220302192411005.chn">
+                    Trên tay OPPO A76: Thiết kế thời trang, pin khủng, có sạc nhanh nhất phân khúc, giá dưới 6 triệu đồng</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- tin noi bat -->
+
+
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-sm-6 row pt-3">
+            <div class="col-sm-7 border border-bottom-0 border-left-0 border-right-0">
+              <div class="d-block pt-3 pb-3 font-weight-bold tab"> ĐÁNG CHÚ Ý </div>
+              <div>
+                <a class="d-block"
+                  title='Trên tay Redmi Note 11S: Đắt hơn 2 triệu so với Redmi Note 11 thì có những nâng cấp gì?'
+                  href="https://genk.vn/tren-tay-redmi-note-11s-dat-hon-2-trieu-so-voi-redmi-note-11-thi-co-nhung-nang-cap-gi-20220302012954238.chn">
+                  <img class="img-fluid" style="width: 507.53px; height: 240px;"
+                    src="https://cdn.tgdd.vn/Files/2022/02/16/1415949/anh-1_1280x720-800-resize.jpg"
+                    alt='Trên tay Redmi Note 11S: Đắt hơn 2 triệu so với Redmi Note 11 thì có những nâng cấp gì?'
+                    title='Trên tay Redmi Note 11S: Đắt hơn 2 triệu so với Redmi Note 11 thì có những nâng cấp gì?'>
+                </a>
+              </div>
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  title='Trên tay Redmi Note 11S: Đắt hơn 2 triệu so với Redmi Note 11 thì có những nâng cấp gì?'
+                  href="https://genk.vn/tren-tay-redmi-note-11s-dat-hon-2-trieu-so-voi-redmi-note-11-thi-co-nhung-nang-cap-gi-20220302012954238.chn">
+                  Trên tay Redmi Note 11S: Đắt hơn 2 triệu so với Redmi Note 11 thì có những nâng cấp gì?
+                </a>
+              </h4>
+              <div>
+                <hr>
+              </div>
+              <div>
+                <h6 class="text-justify">
+                  <a class="hoverText" title="Lửa đã tắt trên con tàu chở 4.000 xe sang, vì nó bị chìm"
+                    href="https://genk.vn/lua-da-tat-tren-con-tau-cho-4000-xe-sang-vi-no-bi-chim-20220302090838297.chn">
+                    Lửa đã tắt trên con tàu chở 4.000 xe sang, vì nó bị chìm</a>
+                </h6>
+              </div>
+              <div>
+                <hr>
+              </div>
+              <div>
+                <h6 class="text-justify">
+                  <a class="hoverText"
+                    title='Kiểm chứng độ bền Galaxy S22 Ultra: Đây mới xứng đáng flagship của năm!"'
+                    href="https://genk.vn/kiem-chung-do-ben-galaxy-s22-ultra-day-moi-xung-dang-flagship-cua-nam-20220302000449548.chn">
+                    Kiểm chứng độ bền Galaxy S22 Ultra: Đây mới xứng đáng flagship của năm!"</a>
+                </h6>
+              </div>
+            </div>
+            <div class="col-sm-5 border bg-light">
+              <div class="d-block pt-3 pb-3 border border-left-0 border-right-0 border-top-0 font-weight-bold">ĐỌC NHIỀU
+              </div>
+              <div class="pt-3 pb-1">
+                <h6 class="text-justify">
+                  <a class="hoverText"
+                    title='Cái kết cho series máy rửa bát: Người tiêu dùng nói gì khi "đã trót" mua và sử dụng?'
+                    href="https://genk.vn/cuoc-phieu-luu-o-nam-cuc-cua-mot-chu-meo-mang-ten-chippy-20210616235853369.chn">
+                    Cái kết cho series máy rửa bát: Người tiêu dùng nói gì khi "đã trót" mua và sử dụng?</a>
+                </h6>
+              </div>
+              <div>
+                <hr>
+              </div>
+              <div class="pb-1 pt-1">
+                <h6 class="text-justify">
+                  <a class="hoverText"
+                    title="Bằng chứng đầu tiên từ sóng não người sắp chết cho thấy họ sẽ hồi tưởng lại toàn bộ cuộc đời mình"
+                    href="https://genk.vn/bang-chung-dau-tien-tu-song-nao-nguoi-sap-chet-cho-thay-ho-se-hoi-tuong-lai-toan-bo-cuoc-doi-minh-20220301014348261.chn">
+                    Bằng chứng đầu tiên từ sóng não người sắp chết cho thấy họ sẽ hồi tưởng lại toàn bộ cuộc đời mình</a>
+                </h6>
+              </div>
+              <div>
+                <hr>
+              </div>
+              <div class="pb-1 pt-1">
+                <h6 class="text-justify">
+                  <a class="hoverText" title="Người dùng 'phát chán' với mạng xã hội của ông Donald Trump"
+                    href="https://genk.vn/nguoi-dung-phat-chan-voi-mang-xa-hoi-cua-ong-donald-trump-20220302091338646.chn">
+                    Người dùng 'phát chán' với mạng xã hội của ông Donald Trump</a>
+                </h6>
+              </div>
+              <div>
+                <hr>
+              </div>
+              <div class="pb-1 pt-1">
+                <h6 class="text-justify">
+                  <a class="hoverText"
+                    title="Thức ăn tự nhiên khan hiếm, Florida phải cho lợn biển ăn 9 tấn rau xà lách mỗi tuần"
+                    href="https://genk.vn/thuc-an-tu-nhien-khan-hiem-florida-phai-cho-lon-bien-an-9-tan-rau-xa-lach-moi-tuan-20220301150823764.chn">
+                    Thức ăn tự nhiên khan hiếm, Florida phải cho lợn biển ăn 9 tấn rau xà lách mỗi tuần</a>
+                </h6>
+              </div>
+              <div>
+                <hr>
+              </div>
+              <div class="pb-1 pt-1">
+                <h6 class="text-justify">
+                  <a class="hoverText"
+                    title='Robot NASA tự chụp bằng chứng nó "xả rác" trên sao Hỏa'
+                    href="https://genk.vn/robot-nasa-tu-chup-bang-chung-no-xa-rac-tren-sao-hoa-20220301133836873.chn">
+                    Robot NASA tự chụp bằng chứng nó "xả rác" trên sao Hỏa</a>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- danh  sach bai bao -->
+
+
+      <div class="row justify-content-center" style="margin-top: 50px;">
+        <div class="col-sm-6 border-top">
+
+          <div class="row pt-3 pb-3">
+            <div class=" col-sm-4  float-left">
+              <a id="title1"
+                title="OPPO Reno7 Z 5G chính thức: Thiết kế viền vuông, Snapdragon 695, camera tích hợp đèn LED RGB, sắp ra mắt tại VN"
+                href="https://genk.vn/oppo-reno7-z-5g-chinh-thuc-thiet-ke-vien-vuong-snapdragon-695-camera-tich-hop-den-led-rgb-sap-ra-mat-tai-vn-2022030219463361.chn">
+                
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/260_162/139269124445442048/2022/3/2/27482208814985013238784343632836236085391897n-16462251131062067666003-0-37-581-967-crop-16462251207461482809954.jpeg"
+                  title="OPPO Reno7 Z 5G chính thức: Thiết kế viền vuông, Snapdragon 695, camera tích hợp đèn LED RGB, sắp ra mắt tại VN"
+                  alt="OPPO Reno7 Z 5G chính thức: Thiết kế viền vuông, Snapdragon 695, camera tích hợp đèn LED RGB, sắp ra mắt tại VN"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/oppo-reno7-z-5g-chinh-thuc-thiet-ke-vien-vuong-snapdragon-695-camera-tich-hop-den-led-rgb-sap-ra-mat-tai-vn-2022030219463361.chn"
+                  title="OPPO Reno7 Z 5G chính thức: Thiết kế viền vuông, Snapdragon 695, camera tích hợp đèn LED RGB, sắp ra mắt tại VN">
+                  OPPO Reno7 Z 5G chính thức: Thiết kế viền vuông, Snapdragon 695, camera tích hợp đèn LED RGB, sắp ra mắt tại VN</a>
+                  <span class="badge badge-danger">Mới</span>
+              </h4>
+              <div>
+                <a href="thietbi_p.html">
+                  <button type="button" class="btn btn-dark">Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                OPPO Reno7 Z cũng sẽ sớm được giới thiệu tại thị trường Việt Nam vào ngày 16/3 tới ...
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title2"
+                title="Realme là hãng smartphone có mức tăng trưởng nhanh nhất Châu Âu, bỏ xa mọi thương hiệu khác"
+                href="https://genk.vn/realme-la-hang-smartphone-co-muc-tang-truong-nhanh-nhat-chau-au-bo-xa-moi-thuong-hieu-khac-20220301185430646.chn">
+                
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/260_162/139269124445442048/2022/3/1/006ruxyjly1gy1yk6usvvj31900u0gqu-1641306900822-16413069015622047233076-1646135235794760355881-68-0-1081-1620-crop-1646135243613992316401.jpg"
+                  title="Realme là hãng smartphone có mức tăng trưởng nhanh nhất Châu Âu, bỏ xa mọi thương hiệu khác"
+                  alt="Realme là hãng smartphone có mức tăng trưởng nhanh nhất Châu Âu, bỏ xa mọi thương hiệu khác"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/realme-la-hang-smartphone-co-muc-tang-truong-nhanh-nhat-chau-au-bo-xa-moi-thuong-hieu-khac-20220301185430646.chn">
+                  Realme là hãng smartphone có mức tăng trưởng nhanh nhất Châu Âu, bỏ xa mọi thương hiệu khác</a>
+                  <span class="badge badge-danger">Mới</span>
+              </h4>
+              <div>
+                <a href="thietbi_p.html">
+                  <button type="button" class="btn btn-dark">Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                Realme chỉ mới gia nhập thị trường Châu Âu vào năm 2019 và nhanh chóng được người dùng ưa chuộng ...
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title3" title="FPT Shop mừng sinh nhật 10 tuổi, giảm giá đến 10 triệu đồng"
+                href="https://genk.vn/fpt-shop-mung-sinh-nhat-10-tuoi-giam-gia-den-10-trieu-dong-20220302172706402.chn">
+
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/260_162/139269124445442048/2022/3/2/avatar1646216829902-16462168301061413534058.png"
+                  title="FPT Shop mừng sinh nhật 10 tuổi, giảm giá đến 10 triệu đồng"
+                  alt="FPT Shop mừng sinh nhật 10 tuổi, giảm giá đến 10 triệu đồng" width="250"
+                  height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/fpt-shop-mung-sinh-nhat-10-tuoi-giam-gia-den-10-trieu-dong-20220302172706402.chn">
+                  FPT Shop mừng sinh nhật 10 tuổi, giảm giá đến 10 triệu đồng</a>
+                  <span class="badge badge-danger">Mới</span>
+              </h4>
+              <div>
+                <a href="tin_ict.html">
+
+                  <button type="button" class="btn btn-dark">Tin ICT</button>
+                </a>
+              </div>
+              <span>
+                Mừng sinh nhật 10 tuổi, FPT Shop giảm giá đến 10 triệu cho khách hàng chọn mua các sản phẩm công nghệ ...
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title4"
+                title='Cận cảnh ROG Strix SCAR 17 - Laptop gaming đầu tiên tại VN trang bị "quái vật" RTX 3080 Ti'
+                href="https://gamek.vn/can-canh-rog-strix-scar-17-laptop-gaming-dau-tien-tai-vn-trang-bi-quai-vat-rtx-3080-ti-20220226193621771.chn">
+                <img class="img-fluid"
+                  src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2022/2/26/photo-8-1645878838225748099367.jpg"
+                  title='Cận cảnh ROG Strix SCAR 17 - Laptop gaming đầu tiên tại VN trang bị "quái vật" RTX 3080 Ti'
+                  alt='Cận cảnh ROG Strix SCAR 17 - Laptop gaming đầu tiên tại VN trang bị "quái vật" RTX 3080 Ti'
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText" href="https://gamek.vn/can-canh-rog-strix-scar-17-laptop-gaming-dau-tien-tai-vn-trang-bi-quai-vat-rtx-3080-ti-20220226193621771.chn">
+                  Cận cảnh ROG Strix SCAR 17 - Laptop gaming đầu tiên tại VN trang bị "quái vật" RTX 3080 Ti</a>
+                  <span class="badge badge-danger">Mới</span>
+              </h4>
+              <div>
+                <a href="thietbi_c.html">
+                  <button type="button" class="btn btn-dark">Máy tính</button>
+                </a>
+              </div>
+              <span>
+                ROG Strix SCAR 17 hứa hẹn đem lại hiệu năng gaming siêu siêu khủng nhưng lẽ dĩ nhiên thì giá của nó ...
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title5"
+                title="Vừa trở lại VN, bom tấn MOBA lại có nguy cơ bay màu vì ý thức game thủ, đọc bình luận mà thương NPH"
+                href="game_m_3.html">
+
+                <img class="img-fluid"
+                  src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2022/3/2/photo-1-16461923949881393153085.jpg"
+                  title="Vừa trở lại VN, bom tấn MOBA lại có nguy cơ bay màu vì ý thức game thủ, đọc bình luận mà thương NPH"
+                  alt="Vừa trở lại VN, bom tấn MOBA lại có nguy cơ bay màu vì ý thức game thủ, đọc bình luận mà thương NPH"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText" href="game_m_3.html">Vừa trở lại VN, bom tấn MOBA lại có nguy cơ bay màu vì ý thức game thủ, đọc bình luận mà thương NPH</a>
+                <span class="badge badge-danger">Mới</span>
+              </h4>
+              <div>
+                <a href="game_m.html">
+
+                  <button type="button" class="btn btn-dark">Game Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                Dù vừa mới được trở lại kho tải song siêu phẩm MOBA lại đang bị nhiều game thủ “phá” ...
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title6" title='Liên tục hợp tác với các "bom tấn" chấn động, Free Fire muốn phủ sóng trên nhiều lĩnh vực?'
+                  href="game_m_4.html">
+
+                <img class="img-fluid"
+                  src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2022/3/1/photo-1-16461452711831699249762.jpg"
+                  title='Liên tục hợp tác với các "bom tấn" chấn động, Free Fire muốn phủ sóng trên nhiều lĩnh vực?'
+                  alt='Liên tục hợp tác với các "bom tấn" chấn động, Free Fire muốn phủ sóng trên nhiều lĩnh vực?'
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText" href="game_m_4.html">Liên tục hợp tác với các "bom tấn" chấn động, Free Fire muốn phủ sóng trên nhiều lĩnh vực?</a>
+                <span class="badge badge-danger">Mới</span>
+              </h4>
+              <div>
+                <a href="game_m.html">
+
+                  <button type="button" class="btn btn-dark">Game Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                Mới đây, tựa game Free Fire lại một lần nữ gây bất ngờ về cái "bắt tay" với BTS ...
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title7"
+                title="Valve sắp ra mắt game mới hoàn toàn miễn phí, rất tiếc không phải là Half-Life 3"
+                href="game_p_2.html">
+
+                <img class="img-fluid"
+                  src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2022/3/1/portal-steam-deck-teaser-26171129-164614471400156529951.jpg"
+                  title="Valve sắp ra mắt game mới hoàn toàn miễn phí, rất tiếc không phải là Half-Life 3"
+                  alt="Valve sắp ra mắt game mới hoàn toàn miễn phí, rất tiếc không phải là Half-Life 3"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText" href="game_p_2.html">Valve sắp ra mắt game mới hoàn toàn miễn phí, rất tiếc không phải là Half-Life 3</a>
+                <span class="badge badge-danger">Mới</span>
+              </h4>
+              <div>
+                <a href="game_p.html">
+
+                  <button type="button" class="btn btn-dark">Game Máy tính</button>
+                </a>
+              </div>
+              <span>
+                Tựa game mới của Valve sẽ hoàn toàn miễn phí, chỉ tiếc là nó không phải “Portal 3”, “Half-Life 3” lại càng không ...
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title8" title="15 điều thú vị về ổ cứng máy tính mà không phải ai cũng biết (P2)"
+                href="https://gamek.vn/15-dieu-thu-vi-ve-o-cung-may-tinh-ma-khong-phai-ai-cung-biet-p2-20220301130021639.chn">
+                
+                <img class="img-fluid"
+                  src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2022/3/1/photo-1-16461143239881721186576.jpg"
+                  title="15 điều thú vị về ổ cứng máy tính mà không phải ai cũng biết (P2)"
+                  alt="15 điều thú vị về ổ cứng máy tính mà không phải ai cũng biết (P2)" width="250"
+                  height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText" href="https://gamek.vn/15-dieu-thu-vi-ve-o-cung-may-tinh-ma-khong-phai-ai-cung-biet-p2-20220301130021639.chn">
+                  15 điều thú vị về ổ cứng máy tính mà không phải ai cũng biết (P2)</a>
+                  <span class="badge badge-danger">Mới</span>
+              </h4>
+              <div>
+                <a href="thietbi_c.html">
+                 
+                  <button type="button" class="btn btn-dark">Máy tính</button>
+                </a>
+              </div>
+              <span>
+                Còn nhiều điều thú vị về ổ cứng máy tính mà bạn có thể chưa biết ...
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title9"
+                title='15 điều thú vị về ổ cứng máy tính mà không phải ai cũng biết (P1)'
+                href="https://gamek.vn/15-dieu-thu-vi-ve-o-cung-may-tinh-ma-khong-phai-ai-cung-biet-p1-2022022821440352.chn">
+                
+                <img class="img-fluid"
+                  src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2022/2/28/photo-1-16460592930932076584755.jpg"
+                  title='15 điều thú vị về ổ cứng máy tính mà không phải ai cũng biết (P1)'
+                  alt='15 điều thú vị về ổ cứng máy tính mà không phải ai cũng biết (P1)'
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText" href="https://gamek.vn/15-dieu-thu-vi-ve-o-cung-may-tinh-ma-khong-phai-ai-cung-biet-p1-2022022821440352.chn">
+                  15 điều thú vị về ổ cứng máy tính mà không phải ai cũng biết (P1)</a>
+                <span class="badge badge-danger">Mới</span>
+              </h4>
+              <div>
+                <a href="thietbi_c.html">
+                  
+                  <button type="button" class="btn btn-dark">Máy tính</button>
+                </a>
+              </div>
+              <span>
+                Nhiều điều về ổ cứng mà bạn không biết, hãy cùng khám phá 15 điều thú vị sau nhé ...
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title10"
+                title="Lừa đảo kiểu Ponzi 2,4 tỷ USD, nhà sáng lập BitConnect đối mặt án tù 70 năm"
+                href="https://genk.vn/lua-dao-kieu-ponzi-24-ty-usd-nha-sang-lap-bitconnect-doi-mat-an-tu-70-nam-20220228162405976.chn">
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/260_162/139269124445442048/2022/2/28/4-2-960x480-16460399021491926626462-0-52-480-820-crop-1646039920319498558253.jpg"
+                  title="Lừa đảo kiểu Ponzi 2,4 tỷ USD, nhà sáng lập BitConnect đối mặt án tù 70 năm"
+                  alt="Lừa đảo kiểu Ponzi 2,4 tỷ USD, nhà sáng lập BitConnect đối mặt án tù 70 năm"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/lua-dao-kieu-ponzi-24-ty-usd-nha-sang-lap-bitconnect-doi-mat-an-tu-70-nam-20220228162405976.chn">
+                  Lừa đảo kiểu Ponzi 2,4 tỷ USD, nhà sáng lập BitConnect đối mặt án tù 70 năm</a>
+                  <span class="badge badge-danger">Mới</span>
+              </h4>
+              <div>
+                <a href="tin_ict.html">
+
+                  <button type="button" class="btn btn-dark">Tin ICT</button>
+                </a>
+              </div>
+              <span>
+                Quy mô vụ lừa đảo BitConnect đã mở rộng ra toàn thế giới, thay vì chỉ giới hạn trong một quốc gia ...
+              </span>
+            </div>
+          </div>
+
+          <!-- ------------------ -->
+          <div class="row justify-content-center">
+            <ul class="pagination">
+              <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="index.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="index_2.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="index_3.html">3</a></li>
+              <li class="page-item"><a class="page-link" href="index_4.html">4</a></li>
+              <li class="page-item"><a class="page-link" href="index_2.html">Next</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <footer id="footer">
+      <div class="footer bg-dark text-white justify-align-between">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="row">
+              <div class=col-1>
+                <a href="index.html">
+                  <img class="img-fluid"
+                    src="https://www.logolynx.com/images/logolynx/1f/1fd863497ac19d574dc998cf75fae52c.jpeg"
+                    width="75.42px" height="30.32px" alt="logo here!" class="float-left"></a>
+              </div>
+              <div class=col-8>
+                <div class="row">
+                  <div class=col-3>
+                    <h5 class="header-h5"><a href="tin_ict.html">Tin ICT</a></h5>
+                  </div>
+                  <div class=col-3>
+                    <h5 class="header-h5"><a href="#">Thiết bị</a></h5>
+
+                    <li class="footer_li2"><a class="a2" href="thietbi_p.html">Máy tính</a></li>
+                    <li class="footer_li2"><a class="a2" href="thietbi_c.html">Điện thoại</a></li>
+
+
+                  </div>
+                  <div class=col-3>
+                    <h5 class="header-h5"><a href="#">Game</a></h5>
+                    <li class="footer_li2"><a href="game_p.html">Game Máy tính</a></li>
+                    <li class="footer_li2"><a href="game_m.html">Game Điện thoại</a></li>
+                    
+                  </div>
+                  <div class=col-3>
+                    <h5 class="header-h5"><a href="khampha.html">Khám phá</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <ul class="nav">
+                  <li class="nav-item footer_li2">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item footer_li2">
+                    <a class="nav-link" href="#">Facebook</a>
+                  </li>
+                  <li class="nav-item footer_li2">
+                    <a class="nav-link" href="#">Twitter</a>
+                  </li>
+                  <li class="nav-item footer_li2">
+                    <a class="nav-link" href="#">Instagram</a>
+                  </li>
+                </ul>
+
+                <p class="pp">Site design / logo © 2022 iTech Group; user contributions licensed under cc by-sa.
+                  rev 2022</p>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </footer>
+  </div>
+  <script src="data.js"></script>
+  <script src="search_onClick.js"></script>
+</body>
+
+
+</html>

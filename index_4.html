@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>iTech - Tech News</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="page-container">
+    <div id="content-wrap">
+
+      <!-- nav -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+          <img class="img-fluid"
+            src="https://www.logolynx.com/images/logolynx/1f/1fd863497ac19d574dc998cf75fae52c.jpeg"
+            width="75.42px" height="30.32px" alt="logo here!">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white;" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white;" href="tin_ict.html">Tin ICT <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Thiết bị
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="thietbi_p.html">Máy tính</a>
+                <a class="dropdown-item" href="thietbi_c.html">Điện thoại</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Game
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="game_p.html">Game Máy tính</a>
+                <a class="dropdown-item" href="game_m.html">Game Điện thoại</a>
+                
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white;" href="khampha.html">Khám phá<span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white;" href="vid.html">Video<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" action="search.html">
+            <input class="form-control mr-sm-2" type="text" id="finding-value" placeholder="Tìm kiếm" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit" onclick="saveLS()" >Tìm kiếm</button>
+          </form>
+        </div>
+      </nav>
+      <div style="margin-top:58px">
+
+      </div>
+      <!-- carousel  -->
+
+      <div class="main">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 img-fluid"
+                src="https://cdn.karar.com/news/1414763.jpg"
+                width="100%" height="850" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>
+                  <a style='color: white'
+                    href="https://genk.vn/nam-2031-smartphone-se-bien-mat-metaverse-tich-hop-vao-the-gioi-thuc-va-con-nguoi-se-sinh-san-kieu-moi-20220222154047736.chn" target="_blank">
+                    Năm 2031, smartphone sẽ biến mất, metaverse tích hợp vào thế giới thực và con người sẽ sinh sản kiểu mới?</a>
+                </h3>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid"
+                src="https://fscl01.fonpit.de/userfiles/7446224/image/samsung-galaxy-tab-s8-series/nextpit-samsung-galaxy-tab-s8-s8-plus-s8-ultra-clr2.jpg"
+                width="100%" height="850" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>
+                  <a style='color: white'
+                    href="https://genk.vn/man-hinh-sieu-to-khong-lo-146-inch-cua-galaxy-tab-s8-ultra-loi-hai-the-nao-uu-nhuoc-ra-sao-co-dang-them-5-trieu-20220302204626795.chn">
+                    Apple tiếp tục chứng minh mình là kẻ đi sau các hãng smartphone Android, nhưng luôn làm tốt hơnMàn hình “siêu to khổng lồ” 14.6 inch của Galaxy Tab S8 Ultra: Lợi hại thế nào, ưu nhược ra sao, có đáng thêm 5 triệu?
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid" 
+                src="https://cdn.tgdd.vn/Files/2022/02/18/1416252/oppo-a76-blue_1280x720-800-resize.jpg" 
+                width="100%" height="850" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>
+                  <a style='color: white'
+                    href="https://genk.vn/tren-tay-oppo-a76-thiet-ke-thoi-trang-pin-khung-co-sac-nhanh-nhat-phan-khuc-gia-duoi-6-trieu-dong-20220302192411005.chn">
+                    Trên tay OPPO A76: Thiết kế thời trang, pin khủng, có sạc nhanh nhất phân khúc, giá dưới 6 triệu đồng</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+     
+      <!-- danh  sach bai bao -->
+
+
+      <div class="row justify-content-center" style="margin-top: 50px;">
+        <div class="col-sm-6 border-top">
+          <div class="row pt-3 pb-3">
+            <div class=" col-sm-4  float-left">
+              <a id="title1"
+                title="AirDrop có thể tận dụng laser để truyền các tập tin lớn nhanh chóng giữa các iPhone trong tương lai"
+                href="https://genk.vn/airdrop-co-the-tan-dung-laser-de-truyen-cac-tap-tin-lon-nhanh-chong-giua-cac-iphone-trong-tuong-lai-20200701125103625.chn">
+
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/250_155/139269124445442048/2020/7/1/photo1593582513136-15935825135381526473352.jpg"
+                  title="AirDrop có thể tận dụng laser để truyền các tập tin lớn nhanh chóng giữa các iPhone trong tương lai"
+                  alt="AirDrop có thể tận dụng laser để truyền các tập tin lớn nhanh chóng giữa các iPhone trong tương lai"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/airdrop-co-the-tan-dung-laser-de-truyen-cac-tap-tin-lon-nhanh-chong-giua-cac-iphone-trong-tuong-lai-20200701125103625.chn"
+                  title="AirDrop có thể tận dụng laser để truyền các tập tin lớn nhanh chóng giữa các iPhone trong tương lai">AirDrop
+                  có thể tận dụng laser để truyền các tập tin lớn nhanh chóng giữa các iPhone trong tương lai</a>
+                
+              </h4>
+              <div>
+                <a href="thietbi_p.html">
+
+                  <button type="button" class="btn btn-dark">Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                Apple đang nghiên cứu một hệ thống giao tiếp quang học không dây cho các thiết bị di động, trong đó
+                sử...
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title2" title="Một trong những ví Bitcoin bí ẩn nhất vừa chuyển nhượng gần 1 tỷ USD"
+                href="https://genk.vn/mot-trong-nhung-vi-bitcoin-bi-an-nhat-vua-chuyen-nhuong-gan-1-ty-usd-20200701123622479.chn">
+
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/250_155/139269124445442048/2020/7/1/photo1593581444692-1593581444882673330992.jpg"
+                  title="Một trong những ví Bitcoin bí ẩn nhất vừa chuyển nhượng gần 1 tỷ USD"
+                  alt="Một trong những ví Bitcoin bí ẩn nhất vừa chuyển nhượng gần 1 tỷ USD" width="250"
+                  height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/mot-trong-nhung-vi-bitcoin-bi-an-nhat-vua-chuyen-nhuong-gan-1-ty-usd-20200701123622479.chn">Một
+                  trong những ví Bitcoin bí ẩn nhất vừa chuyển nhượng gần 1 tỷ USD</a>
+                
+              </h4>
+              <div>
+                <a href="thietbi_p.html">
+
+                  <button type="button" class="btn btn-dark">Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                Sau giao dịch này, một trong những ví bitcoin giá trị nhất thế giới đã trống rỗng.
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title3"
+                title="Mac mini thử nghiệm đầu tiên được trang bị chip ARM của Apple chứng minh lời hứa Apple Silicon là sự thật"
+                href="https://genk.vn/mac-mini-thu-nghiem-dau-tien-duoc-trang-bi-chip-arm-cua-apple-chung-minh-loi-hua-apple-silicon-la-su-that-20200630115835045.chn">
+
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/250_155/139269124445442048/2020/6/30/photo1593492954744-1593492954925838474919.jpg"
+                  title="Mac mini thử nghiệm đầu tiên được trang bị chip ARM của Apple chứng minh lời hứa Apple Silicon là sự thật"
+                  alt="Mac mini thử nghiệm đầu tiên được trang bị chip ARM của Apple chứng minh lời hứa Apple Silicon là sự thật"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/mac-mini-thu-nghiem-dau-tien-duoc-trang-bi-chip-arm-cua-apple-chung-minh-loi-hua-apple-silicon-la-su-that-20200630115835045.chn">Mac
+                  mini thử nghiệm đầu tiên được trang bị chip ARM của Apple chứng minh lời hứa Apple Silicon là sự
+                  thật</a>
+                
+              </h4>
+              <div>
+                <a href="thietbi_p.html">
+
+                  <button type="button" class="btn btn-dark">Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                Hiệu năng của chip ARM trên Mac mini có thể tương đương với chip Intel.
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title4" title="Huawei tiếp tục là nhà sản xuất smartphone số 1 thế giới"
+                href="https://genk.vn/huawei-tiep-tuc-la-nha-san-xuat-smartphone-so-1-the-gioi-20200701104915891.chn">
+
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/250_155/139269124445442048/2020/7/1/photo1593575295991-15935752961451669464732.jpg"
+                  title="Huawei tiếp tục là nhà sản xuất smartphone số 1 thế giới"
+                  alt="Huawei tiếp tục là nhà sản xuất smartphone số 1 thế giới" width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/huawei-tiep-tuc-la-nha-san-xuat-smartphone-so-1-the-gioi-20200701104915891.chn">Huawei
+                  tiếp tục là nhà sản xuất smartphone số 1 thế giới</a>
+                
+              </h4>
+              <div>
+                <a href="thietbi_p.html">
+
+                  <button type="button" class="btn btn-dark">Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                Tuy nhiên, khoảng cách giữa Huawei và Samsung cũng đã được thu hẹp, có thể nói là rất sát sao.
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title5"
+                title="Xuất hiện bằng chứng cho thấy khí hậu nóng lên, tầng ozone tiêu biến cũng khiến sự kiện đại tuyệt chủng diễn ra"
+                href="https://genk.vn/xuat-hien-bang-chung-cho-thay-khi-hau-nong-len-tang-ozone-tieu-bien-cung-khien-su-kien-dai-tuyet-chung-dien-ra-20200630143018978.chn">
+
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/250_155/139269124445442048/2020/6/30/photo1593502159180-15935021593102018319611.jpg"
+                  title="Xuất hiện bằng chứng cho thấy khí hậu nóng lên, tầng ozone tiêu biến cũng khiến sự kiện đại tuyệt chủng diễn ra"
+                  alt="Xuất hiện bằng chứng cho thấy khí hậu nóng lên, tầng ozone tiêu biến cũng khiến sự kiện đại tuyệt chủng diễn ra"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/xuat-hien-bang-chung-cho-thay-khi-hau-nong-len-tang-ozone-tieu-bien-cung-khien-su-kien-dai-tuyet-chung-dien-ra-20200630143018978.chn"
+                  title="">Xuất hiện bằng chứng cho thấy khí hậu nóng lên, tầng ozone tiêu biến cũng khiến sự kiện đại
+                  tuyệt chủng diễn ra</a>
+                
+              </h4>
+              <div>
+                <a href="thietbi_p.html">
+
+                  <button type="button" class="btn btn-dark">Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                Không cần tới thiên thạch hay núi lửa phun trào, sự sống trên mặt đất cũng có thể đi đến bờ diệt
+                vong....
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title6"
+                title="Nội dung bài đăng của ông Trump đẩy Facebook vào thảm cảnh bị hàng trăm nhãn hàng 'cạch mặt', mất 56 tỷ USD vốn hóa thị trường"
+                href="https://genk.vn//noi-dung-bai-dang-cua-ong-trump-day-facebook-vao-tham-canh-bi-hang-tram-nhan-hang-cach-mat-mat-56-ty-usd-von-hoa-thi-truong-20200627204453084.chn">
+
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/250_155/139269124445442048/2020/6/27/photo1593265341036-1593265341460899256641.jpg"
+                  title="Nội dung bài đăng của ông Trump đẩy Facebook vào thảm cảnh bị hàng trăm nhãn hàng 'cạch mặt', mất 56 tỷ USD vốn hóa thị trường"
+                  alt="Nội dung bài đăng của ông Trump đẩy Facebook vào thảm cảnh bị hàng trăm nhãn hàng 'cạch mặt', mất 56 tỷ USD vốn hóa thị trường"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn//noi-dung-bai-dang-cua-ong-trump-day-facebook-vao-tham-canh-bi-hang-tram-nhan-hang-cach-mat-mat-56-ty-usd-von-hoa-thi-truong-20200627204453084.chn">Nội
+                  dung bài đăng của ông Trump đẩy Facebook vào thảm cảnh bị hàng trăm nhãn hàng 'cạch mặt', mất 56 tỷ
+                  USD vốn hóa thị trường</a>
+                
+              </h4>
+              <div>
+                <a href="thietbi_p.html">
+
+                  <button type="button" class="btn btn-dark">Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                (Tổ Quốc) - Thảm cảnh bị tẩy chay toàn cầu của Facebook xuất phát từ một bài đăng của tổng thống
+                Trump....
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title7" title="4 sự thật thú vị có thể bạn chưa biết về thiên tài Leonardo Da Vinci"
+                href="https://genk.vn/4-su-that-thu-vi-co-the-ban-chua-biet-ve-thien-tai-leonardo-da-vinci-2020051323373014.chn">
+
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/250_155/139269124445442048/2020/7/12/photo1594547809661-15945478098101879670961.jpg"
+                  title="4 sự thật thú vị có thể bạn chưa biết về thiên tài Leonardo Da Vinci"
+                  alt="4 sự thật thú vị có thể bạn chưa biết về thiên tài Leonardo Da Vinci" width="250"
+                  height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/4-su-that-thu-vi-co-the-ban-chua-biet-ve-thien-tai-leonardo-da-vinci-2020051323373014.chn">4
+                  sự thật thú vị có thể bạn chưa biết về thiên tài Leonardo Da Vinci</a>
+                
+              </h4>
+              <div>
+                <a href="thietbi_p.html">
+
+                  <button type="button" class="btn btn-dark">Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                Tới nay, những điều liên quan tới cuộc sống của thiên tài quá cố Leonardo Da Vinci vẫn luôn thu hút
+                sự...
+              </span>
+            </div>
+          </div>
+         
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title8"
+                title="Tencent dính cú lừa cay như sa tế: Chạy quảng cáo 1 triệu USD cho Lao Gan Ma nhưng không thu được đồng nào, cuối cùng phát hiện hợp đồng bị ‘fake’"
+                href="https://genk.vn/tencent-dinh-cu-lua-cay-nhu-sa-te-chay-quang-cao-1-trieu-usd-cho-lao-gan-ma-nhung-khong-thu-duoc-dong-nao-cuoi-cung-phat-hien-hop-dong-bi-fake-20200704080518169.chn">
+
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/250_155/139269124445442048/2020/7/4/photo1593824613102-1593824613819449427585.jpg"
+                  title="Tencent dính cú lừa cay như sa tế: Chạy quảng cáo 1 triệu USD cho Lao Gan Ma nhưng không thu được đồng nào, cuối cùng phát hiện hợp đồng bị ‘fake’"
+                  alt="Tencent dính cú lừa cay như sa tế: Chạy quảng cáo 1 triệu USD cho Lao Gan Ma nhưng không thu được đồng nào, cuối cùng phát hiện hợp đồng bị ‘fake’"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/tencent-dinh-cu-lua-cay-nhu-sa-te-chay-quang-cao-1-trieu-usd-cho-lao-gan-ma-nhung-khong-thu-duoc-dong-nao-cuoi-cung-phat-hien-hop-dong-bi-fake-20200704080518169.chn">Tencent
+                  dính cú lừa cay như sa tế: Chạy quảng cáo 1 triệu USD cho Lao Gan Ma nhưng không thu được đồng nào,
+                  cuối cùng phát hiện hợp đồng bị ‘fake’</a>
+              </h4>
+              <div>
+                <a href="tin_ict.html">
+
+                  <button type="button" class="btn btn-dark">Tin ICT</button>
+                </a>
+              </div>
+              <span>
+                Sự việc đang trở thành chủ đề quan tâm hàng đầu trên mạng xã hội Weibo của Trung Quốc.
+              </span>
+            </div>
+          </div> 
+
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title9"
+                title="Xiaomi đang ấp ủ smartphone với màn hình bao quanh thân máy, mặt lưng trong suốt, camera 108MP?"
+                href="https://genk.vn/xiaomi-dang-ap-u-smartphone-voi-man-hinh-bao-quanh-than-may-mat-lung-trong-suot-camera-108mp-2020071316311639.chn">
+                
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/250_155/139269124445442048/2020/7/13/photo1594632401888-15946324022031445669650.jpeg"
+                  title="Xiaomi đang ấp ủ smartphone với màn hình bao quanh thân máy, mặt lưng trong suốt, camera 108MP?"
+                  alt="Xiaomi đang ấp ủ smartphone với màn hình bao quanh thân máy, mặt lưng trong suốt, camera 108MP?"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/xiaomi-dang-ap-u-smartphone-voi-man-hinh-bao-quanh-than-may-mat-lung-trong-suot-camera-108mp-2020071316311639.chn"
+                  title="Xiaomi đang ấp ủ smartphone với màn hình bao quanh thân máy, mặt lưng trong suốt, camera 108MP?">Xiaomi
+                  đang ấp ủ smartphone với màn hình bao quanh thân máy, mặt lưng trong suốt, camera 108MP?</a>
+              </h4>
+              <div>
+                <a href="thietbi_p.html">
+                  
+                  <button type="button" class="btn btn-dark">Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                Ngay cả khi được áp dụng vào thực tế và trở thành một sản phẩm hoàn chỉnh, thiết bị này cũng có thể
+                sẽ...
+              </span>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 border-top">
+            <div class=" col-sm-4  float-left">
+              <a id="title10"
+                title="Đây có phải lý do thiên tài Warren Buffet đặt cược tới gần nửa tài sản vào cổ phiếu Apple?"
+                href="https://genk.vn/day-co-phai-ly-do-thien-tai-warren-buffet-dat-cuoc-toi-gan-nua-tai-san-vao-co-phieu-apple-2020071118341378.chn">
+                
+                <img class="img-fluid"
+                  src="https://genk.mediacdn.vn/zoom/250_155/139269124445442048/2020/7/11/photo1594467198147-15944671984992086371950.jpg"
+                  title="Đây có phải lý do thiên tài Warren Buffet đặt cược tới gần nửa tài sản vào cổ phiếu Apple?"
+                  alt="Đây có phải lý do thiên tài Warren Buffet đặt cược tới gần nửa tài sản vào cổ phiếu Apple?"
+                  width="250" height="155"></a>
+            </div>
+            <div class="col-sm-8 float-right">
+              <h4 class="text-justify">
+                <a class="hoverText"
+                  href="https://genk.vn/day-co-phai-ly-do-thien-tai-warren-buffet-dat-cuoc-toi-gan-nua-tai-san-vao-co-phieu-apple-2020071118341378.chn">Đây
+                  có phải lý do thiên tài Warren Buffet đặt cược tới gần nửa tài sản vào cổ phiếu Apple?</a>
+              </h4>
+              <div>
+                <a href="thietbi_p.html">
+                  
+                  <button type="button" class="btn btn-dark">Điện thoại</button>
+                </a>
+              </div>
+              <span>
+                Người ta gọi Warren Buffet là "nhà tiên tri xứ Omaha". Hiện tại, 43% tổng trị giá danh mục đầu tư của...
+              </span>
+            </div>
+          </div>
+
+
+
+
+          <div class="row justify-content-center">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="index_3.html">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="index_2.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="index_3.html">3</a></li>
+              <li class="page-item  active"><a class="page-link" href="index_4.html">4</a></li>
+              <li class="page-item disabled"><a class="page-link" href="index.html">Next</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <footer id="footer">
+      <div class="footer bg-dark text-white justify-align-between">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="row">
+              <div class=col-1>
+                <a href="index.html">
+                  <img class="img-fluid"
+                    src="https://www.logolynx.com/images/logolynx/1f/1fd863497ac19d574dc998cf75fae52c.jpeg"
+                    width="75.42px" height="30.32px" alt="logo here!" class="float-left"></a>
+              </div>
+              <div class=col-8>
+                <div class="row">
+                  <div class=col-3>
+                    <h5 class="header-h5"><a href="tin_ict.html">Tin ICT</a></h5>
+                  </div>
+                  <div class=col-3>
+                    <h5 class="header-h5"><a href="#">Thiết bị</a></h5>
+
+                    <li class="footer_li2"><a class="a2" href="thietbi_p.html">Máy tính</a></li>
+                    <li class="footer_li2"><a class="a2" href="thietbi_c.html">Điện thoại</a></li>
+
+
+                  </div>
+                  <div class=col-3>
+                    <h5 class="header-h5"><a href="#">Game</a></h5>
+                    <li class="footer_li2"><a href="game_p.html">Game Máy tính</a></li>
+                    <li class="footer_li2"><a href="game_m.html">Game Điện thoại</a></li>
+                    
+                  </div>
+                  <div class=col-3>
+                    <h5 class="header-h5"><a href="khampha.html">Khám phá</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <ul class="nav">
+                  <li class="nav-item footer_li2">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item footer_li2">
+                    <a class="nav-link" href="#">Facebook</a>
+                  </li>
+                  <li class="nav-item footer_li2">
+                    <a class="nav-link" href="#">Twitter</a>
+                  </li>
+                  <li class="nav-item footer_li2">
+                    <a class="nav-link" href="#">Instagram</a>
+                  </li>
+                </ul>
+
+                <p class="pp">Site design / logo © 2022 iTech Group; user contributions licensed under cc by-sa.
+                  rev 2022</p>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </footer>
+  </div>
+  <script src="data.js"></script>
+  <script src="search_onClick.js"></script>
+</body>
+
+
+</html>
